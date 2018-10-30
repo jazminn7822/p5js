@@ -12,7 +12,7 @@
 
 function draw() {
   //
- ellipse(mouseX,mouseY,5,5)
+ ellipse(mouseX,mouseY,5,5)//when mouse is pressed an ellipse will appear.
   
  } 
 
@@ -37,7 +37,7 @@ function draw() {
    
    fill(234,69,150)
    rect(560,560,10,10)//left eye
-   rect(580,560,10,10)//right ye
+   rect(580,560,10,10)//right eye
    rect(570,580,10,10)//small bottom right square
    
    fill(108,58,108)
@@ -58,7 +58,7 @@ function draw() {
  }
 
 
-//WHEN KEY PRESSED a spaceship will appear and the user will be able to move it. 
+//WHEN KEY PRESSED small "planets" will appear at every corner
 	 function keyPressed(){   
       background(mouseX/2,mouseY/2,mouseX+mouseY)  
   //background(65,4,87)
@@ -90,12 +90,12 @@ function draw() {
      rect(540,525,10,10)
      rect(560,530,10,10)
      
-     //
+     //when you press the space bar and move the mouse around, the lines will move to the location of the mouse.
      line(mouseX,mouseY,width,height)
      line(mouseX,mouseY,width,height)
-  line(mouseX,mouseY,0,height)//bottom left corner
-  line(mouseX,mouseY,width,0)//right top corner
-  line(mouseX,mouseY,0,0)
+     line(mouseX,mouseY,0,height)//bottom left corner
+     line(mouseX,mouseY,width,0)//right top corner
+     line(mouseX,mouseY,0,0)
      
      
      
