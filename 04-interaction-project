@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+      function setup() {
+  createCanvas(600, 600);
+ background(220); 
+}
+
+function draw() {
+  //
+ ellipse(mouseX,mouseY,5,5)
+  
+ } 
+
+
+//when mouse pressed the user will be able to draw. 
+ function mousePressed(){
+  background("black");
+   
+   //small squares
+   fill("yellow") //when mouse pressed
+   noStroke() //when mouse pressed
+   
+   rect(10,10,10,10)//left eye Small rectangles
+   rect(30,10,10,10)//right eye
+   rect(20,30,10,10) //small top left square
+   
+   fill(73,186,56)
+   rect(560,10,10,10)//left eye
+   rect(580,10,10,10)//right eye
+   rect(570,30,10,10) //small top right square
+   
+   
+   fill(234,69,150)
+   rect(560,560,10,10)//left eye
+   rect(580,560,10,10)//right ye
+   rect(570,580,10,10)//small bottom right square
+   
+   fill(108,58,108)
+   rect(20,560,10,10)//eyes of bottom left square
+   rect(30,580,10,10)//small bottom left square
+   rect(40,560,10,10)//eyes of bottom left square
+   
+   
+   
+  ellipse(mouseX,mouseY,5,5) //when mouse pressed
+   //fix
+   stroke(5)
+       fill("white")
+  ellipse(mouseX,mouseY,width/6,height/6)
+   
+  ellipse(mouseX,mouseY,0,height)//bottom left corner
+     
+ }
+
+
+//WHEN KEY PRESSED a spaceship will appear and the user will be able to move it. 
+	 function keyPressed(){   
+      background(mouseX/2,mouseY/2,mouseX+mouseY)  
+  //background(65,4,87)
+     fill(255,139,0)
+     ellipse(50,50,90,90)
+     fill("black")
+     ellipse(50,50,100,20)
+     
+     fill(232,70,91 )
+     ellipse(550,50,60,60)  
+     fill("black")
+     ellipse(550,50,70,20)
+     
+     fill(38,80,255)
+     ellipse(550,550,70,70)
+     //ring of planet
+     fill("black")
+     ellipse(550,550,80,20)
+     
+     
+     
+     fill(47,134,144)
+     ellipse(50,550,80,80)
+     fill("black")
+     ellipse(50,550,90,20)
+     
+     fill("green")
+     rect(550,565,10,10)
+     rect(540,525,10,10)
+     rect(560,530,10,10)
+     
+     //
+     line(mouseX,mouseY,width,height)
+     line(mouseX,mouseY,width,height)
+  line(mouseX,mouseY,0,height)//bottom left corner
+  line(mouseX,mouseY,width,0)//right top corner
+  line(mouseX,mouseY,0,0)
+     
+     
+     
+}
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/jazminn7822/p5js/blob/master/04-interaction-project.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
